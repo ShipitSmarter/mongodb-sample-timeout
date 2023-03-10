@@ -1,4 +1,4 @@
-# MongoDB example application
+# MongoDB timeouts on insert
 This repo holds the example application to demonstrate the timeouts we are experiencing when using MongoDB Atlas with Azure Serverless.
 
 
