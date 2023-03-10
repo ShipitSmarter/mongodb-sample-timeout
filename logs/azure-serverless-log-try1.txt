@@ -1,0 +1,484 @@
+06:47:38 jeff@sis-laptop-30 publish ±|main ✗|→ ./s
+Display all 163 possibilities? (y or n)
+06:47:38 jeff@sis-laptop-30 publish ±|main ✗|→ ./sample azure
+dbug: MongoDB.SDAM[0]
+      1 Cluster opening
+
+dbug: MongoDB.SDAM[0]
+      1 Cluster opened
+3/9/2023 5:47:53 PM
+Inserting with ref 52bca63f-1f7d-40dc-bbd2-b8415c06a658
+dbug: MongoDB.SDAM[0]
+      1 Description changed
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Server opening
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool opening 600000 0 100 2 120000 500
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool created 600000 0 100 2 120000 500
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool ready
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Description changed { ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/p9cd6-3m-acceptance-lb.izjha.mongodb.net:27017" }", EndPoint: "Unspecified/p9cd6-3m-acceptance-lb.izjha.mongodb.net:27017", ReasonChanged: "Initialized", State: "Connected", ServerVersion: , TopologyVersion: , Type: "LoadBalanced", WireVersionRange: "", LastHeartbeatTimestamp: null, LastUpdateTimestamp: "2023-03-09T17:47:53.2413518Z" }
+dbug: MongoDB.SDAM[0]
+      1 Description changed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Server opened
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 4 1 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(1), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a1bc9f30317c1f635eb80"), "CreatedOn" : ISODate("2023-03-09T17:47:53.198Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("52bca63f-1f7d-40dc-bbd2-b8415c06a658"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 4 1 Command succeeded insert 34.0365 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678384073, 1), "signature" : { "hash" : new BinData(0, "axrOm3Q2tTSNrD7YL5LX5MNn+Pc="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678384073, 1) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 52bca63f-1f7d-40dc-bbd2-b8415c06a658
+Completed in 422ms
+
+3/9/2023 5:52:53 PM
+Inserting with ref 768bc9af-6543-462f-be09-f4a6ed9ab53c
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 5 2 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(2), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678384073, 1), "signature" : { "hash" : new BinData(0, "axrOm3Q2tTSNrD7YL5LX5MNn+Pc="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a1cf5f30317c1f635eb81"), "CreatedOn" : ISODate("2023-03-09T17:52:53.62Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("768bc9af-6543-462f-be09-f4a6ed9ab53c"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 5 2 Command succeeded insert 28.8432 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678384373, 7), "signature" : { "hash" : new BinData(0, "TYMVbf7NGwdVTnDe+mIfg+3E4Gw="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678384373, 7) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 768bc9af-6543-462f-be09-f4a6ed9ab53c
+Completed in 31ms
+
+3/9/2023 5:57:53 PM
+Inserting with ref 187fcde9-68b1-4007-8801-215631950cb4
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 6 3 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(3), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678384373, 7), "signature" : { "hash" : new BinData(0, "TYMVbf7NGwdVTnDe+mIfg+3E4Gw="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a1e21f30317c1f635eb82"), "CreatedOn" : ISODate("2023-03-09T17:57:53.653Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("187fcde9-68b1-4007-8801-215631950cb4"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 6 3 Command succeeded insert 22.8155 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678384673, 1), "signature" : { "hash" : new BinData(0, "OMlNwuffppOD6CP+haIwwOp0fNM="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678384673, 1) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 187fcde9-68b1-4007-8801-215631950cb4
+Completed in 24ms
+
+3/9/2023 6:02:53 PM
+Inserting with ref f1dc5916-8bdf-4920-8227-1def65aaa40a
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 7 4 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(4), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678384673, 1), "signature" : { "hash" : new BinData(0, "OMlNwuffppOD6CP+haIwwOp0fNM="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a1f4df30317c1f635eb83"), "CreatedOn" : ISODate("2023-03-09T18:02:53.676Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("f1dc5916-8bdf-4920-8227-1def65aaa40a"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 7 4 Command succeeded insert 20.5339 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678384973, 1), "signature" : { "hash" : new BinData(0, "g5kbOuG0afInr//sBFHs4OEuFaY="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678384973, 1) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref f1dc5916-8bdf-4920-8227-1def65aaa40a
+Completed in 21ms
+
+3/9/2023 6:07:53 PM
+Inserting with ref ae92596b-446d-4794-97bf-95b44af32e2a
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 8 5 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(5), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678384973, 1), "signature" : { "hash" : new BinData(0, "g5kbOuG0afInr//sBFHs4OEuFaY="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2079f30317c1f635eb84"), "CreatedOn" : ISODate("2023-03-09T18:07:53.698Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("ae92596b-446d-4794-97bf-95b44af32e2a"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 8 5 Command succeeded insert 21.2623 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678385273, 1), "signature" : { "hash" : new BinData(0, "Q5XSXg0xQ9LLmgWo5rkios4LnP8="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678385273, 1) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref ae92596b-446d-4794-97bf-95b44af32e2a
+Completed in 23ms
+
+3/9/2023 6:12:53 PM
+Inserting with ref 97511efb-ab03-4458-8f94-1c41d5ac7c55
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 9 6 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(6), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678385273, 1), "signature" : { "hash" : new BinData(0, "Q5XSXg0xQ9LLmgWo5rkios4LnP8="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a21a5f30317c1f635eb85"), "CreatedOn" : ISODate("2023-03-09T18:12:53.724Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("97511efb-ab03-4458-8f94-1c41d5ac7c55"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4039f92600d14c171
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 36043 9 6 Command succeeded insert 36.096 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678385573, 1), "signature" : { "hash" : new BinData(0, "aSkGz/LZ+Yq/5Kk4bmEujQJ1+Mc="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678385573, 1) } 640855d4039f92600d14c171
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 97511efb-ab03-4458-8f94-1c41d5ac7c55
+Completed in 37ms
+
+3/9/2023 6:17:53 PM
+Inserting with ref e533555f-bebb-4dec-8abe-0d3e5f1e9345
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removing
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closing Unknown
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closed Unknown
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 13 7 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(7), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678385573, 1), "signature" : { "hash" : new BinData(0, "aSkGz/LZ+Yq/5Kk4bmEujQJ1+Mc="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a22d1f30317c1f635eb86"), "CreatedOn" : ISODate("2023-03-09T18:17:53.767Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("e533555f-bebb-4dec-8abe-0d3e5f1e9345"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 13 7 Command succeeded insert 22.5448 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678385873, 1), "signature" : { "hash" : new BinData(0, "2INhJNOOn8URM/KZCDVRtB+xhrM="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678385873, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref e533555f-bebb-4dec-8abe-0d3e5f1e9345
+Completed in 244ms
+
+3/9/2023 6:22:54 PM
+Inserting with ref bcae71ea-904b-4f29-9440-deb102046b09
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 14 8 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(8), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678385873, 1), "signature" : { "hash" : new BinData(0, "2INhJNOOn8URM/KZCDVRtB+xhrM="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a23fef30317c1f635eb87"), "CreatedOn" : ISODate("2023-03-09T18:22:54.016Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("bcae71ea-904b-4f29-9440-deb102046b09"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 14 8 Command succeeded insert 24.7489 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678386174, 1), "signature" : { "hash" : new BinData(0, "mZqCX2vqtoYvs5ZLbvK/QAtATXY="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678386174, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref bcae71ea-904b-4f29-9440-deb102046b09
+Completed in 26ms
+
+3/9/2023 6:27:54 PM
+Inserting with ref 9abf6168-35b4-44d0-9d88-7210662d9310
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 15 9 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(9), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678386174, 1), "signature" : { "hash" : new BinData(0, "mZqCX2vqtoYvs5ZLbvK/QAtATXY="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a252af30317c1f635eb88"), "CreatedOn" : ISODate("2023-03-09T18:27:54.044Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("9abf6168-35b4-44d0-9d88-7210662d9310"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 15 9 Command succeeded insert 45.2276 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678386474, 1), "signature" : { "hash" : new BinData(0, "XHQpUKBnfVtLMjqPPzyBOTv7E50="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678386474, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 9abf6168-35b4-44d0-9d88-7210662d9310
+Completed in 46ms
+
+3/9/2023 6:32:54 PM
+Inserting with ref 0844b26d-d7b5-42c8-a70f-4c598bb675fd
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 16 10 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(10), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678386474, 1), "signature" : { "hash" : new BinData(0, "XHQpUKBnfVtLMjqPPzyBOTv7E50="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2656f30317c1f635eb89"), "CreatedOn" : ISODate("2023-03-09T18:32:54.094Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("0844b26d-d7b5-42c8-a70f-4c598bb675fd"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 16 10 Command succeeded insert 51.1122 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678386774, 1), "signature" : { "hash" : new BinData(0, "k57YGyg0Oa0RExPH3fb2sq/7zMM="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678386774, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 0844b26d-d7b5-42c8-a70f-4c598bb675fd
+Completed in 52ms
+
+3/9/2023 6:37:54 PM
+Inserting with ref 2479dc9f-f6ab-4291-a620-585e63d85ec4
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 17 11 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(11), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678386774, 1), "signature" : { "hash" : new BinData(0, "k57YGyg0Oa0RExPH3fb2sq/7zMM="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2782f30317c1f635eb8a"), "CreatedOn" : ISODate("2023-03-09T18:37:54.146Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("2479dc9f-f6ab-4291-a620-585e63d85ec4"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 17 11 Command succeeded insert 25.4715 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678387074, 1), "signature" : { "hash" : new BinData(0, "wQEPokOGubD/A3/6e1aUDYO1lpI="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678387074, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 2479dc9f-f6ab-4291-a620-585e63d85ec4
+Completed in 26ms
+
+3/9/2023 6:42:54 PM
+Inserting with ref b58fc715-58ad-43e7-b0ff-c4335ec0c9d4
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 18 12 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(12), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678387074, 1), "signature" : { "hash" : new BinData(0, "wQEPokOGubD/A3/6e1aUDYO1lpI="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a28aef30317c1f635eb8b"), "CreatedOn" : ISODate("2023-03-09T18:42:54.174Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("b58fc715-58ad-43e7-b0ff-c4335ec0c9d4"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40117 18 12 Command succeeded insert 51.2162 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678387374, 1), "signature" : { "hash" : new BinData(0, "1IFrx1OMHdQEDMBKjYw+4PfKDAY="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678387374, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref b58fc715-58ad-43e7-b0ff-c4335ec0c9d4
+Completed in 52ms
+
+3/9/2023 6:47:54 PM
+Inserting with ref b4fdff8c-5116-4e07-8ffc-6a6c3b6c1e64
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removing
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closing Unknown
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closed Unknown
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 22 13 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(13), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678387374, 1), "signature" : { "hash" : new BinData(0, "1IFrx1OMHdQEDMBKjYw+4PfKDAY="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a29daf30317c1f635eb8c"), "CreatedOn" : ISODate("2023-03-09T18:47:54.23Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("b4fdff8c-5116-4e07-8ffc-6a6c3b6c1e64"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 22 13 Command succeeded insert 29.3292 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678387674, 1), "signature" : { "hash" : new BinData(0, "eBhOMJMAzGrzT7SagjUucTKWSbc="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678387674, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref b4fdff8c-5116-4e07-8ffc-6a6c3b6c1e64
+Completed in 259ms
+
+3/9/2023 6:52:54 PM
+Inserting with ref 0003613c-12b3-460c-b2fb-ab021938b8c5
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 23 14 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(14), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678387674, 1), "signature" : { "hash" : new BinData(0, "eBhOMJMAzGrzT7SagjUucTKWSbc="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2b06f30317c1f635eb8d"), "CreatedOn" : ISODate("2023-03-09T18:52:54.493Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("0003613c-12b3-460c-b2fb-ab021938b8c5"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 23 14 Command succeeded insert 28.1872 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678387974, 169), "signature" : { "hash" : new BinData(0, "ilr+0QttsfH6Hfrg1ZVlJ8DOP0c="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678387974, 169) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 0003613c-12b3-460c-b2fb-ab021938b8c5
+Completed in 29ms
+
+3/9/2023 6:57:54 PM
+Inserting with ref c56b5f71-dda9-45a1-871b-d6290acf0520
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 24 15 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(15), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678387974, 169), "signature" : { "hash" : new BinData(0, "ilr+0QttsfH6Hfrg1ZVlJ8DOP0c="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2c32f30317c1f635eb8e"), "CreatedOn" : ISODate("2023-03-09T18:57:54.527Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("c56b5f71-dda9-45a1-871b-d6290acf0520"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 24 15 Command succeeded insert 22.9856 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678388274, 1), "signature" : { "hash" : new BinData(0, "mYf7+bTOdjx9lfnr4uukMlk8lRA="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678388274, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref c56b5f71-dda9-45a1-871b-d6290acf0520
+Completed in 23ms
+
+3/9/2023 7:02:54 PM
+Inserting with ref f5d1269e-4e3a-4cd0-a056-98a0a670ec1c
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 25 16 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(16), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678388274, 1), "signature" : { "hash" : new BinData(0, "mYf7+bTOdjx9lfnr4uukMlk8lRA="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2d5ef30317c1f635eb8f"), "CreatedOn" : ISODate("2023-03-09T19:02:54.553Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("f5d1269e-4e3a-4cd0-a056-98a0a670ec1c"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 25 16 Command succeeded insert 23.2577 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678388574, 1), "signature" : { "hash" : new BinData(0, "POQ9LPewzHgpVBtHcJF5xor07RA="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678388574, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref f5d1269e-4e3a-4cd0-a056-98a0a670ec1c
+Completed in 24ms
+
+3/9/2023 7:07:54 PM
+Inserting with ref a2751b25-4323-40a6-869d-261075e3bbfa
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 26 17 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(17), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678388574, 1), "signature" : { "hash" : new BinData(0, "POQ9LPewzHgpVBtHcJF5xor07RA="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2e8af30317c1f635eb90"), "CreatedOn" : ISODate("2023-03-09T19:07:54.582Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("a2751b25-4323-40a6-869d-261075e3bbfa"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 26 17 Command succeeded insert 25.7647 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678388874, 24), "signature" : { "hash" : new BinData(0, "4Cv02Q/IaRTDFBtYQcPdvS6vu4A="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678388874, 24) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref a2751b25-4323-40a6-869d-261075e3bbfa
+Completed in 27ms
+
+3/9/2023 7:12:54 PM
+Inserting with ref 5e2f2572-dfe8-427f-ac20-9c65fe254146
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 27 18 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(18), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678388874, 24), "signature" : { "hash" : new BinData(0, "4Cv02Q/IaRTDFBtYQcPdvS6vu4A="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a2fb6f30317c1f635eb91"), "CreatedOn" : ISODate("2023-03-09T19:12:54.612Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("5e2f2572-dfe8-427f-ac20-9c65fe254146"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 43811 27 18 Command succeeded insert 46.2065 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678389174, 1), "signature" : { "hash" : new BinData(0, "3H+5eBZNa+NUK1ygjSLr7X3r/ok="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678389174, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 5e2f2572-dfe8-427f-ac20-9c65fe254146
+Completed in 46ms
+
+3/9/2023 7:17:54 PM
+Inserting with ref b78f5a9a-5a3d-4d4f-8666-deb818f37cfe
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removing
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closing Unknown
+dbug: MongoDB.Connection[0]
+      1 3 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closed Unknown
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40779 31 19 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(19), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678389174, 1), "signature" : { "hash" : new BinData(0, "3H+5eBZNa+NUK1ygjSLr7X3r/ok="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a30e2f30317c1f635eb92"), "CreatedOn" : ISODate("2023-03-09T19:17:54.663Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("b78f5a9a-5a3d-4d4f-8666-deb818f37cfe"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40779 31 19 Command succeeded insert 19.7704 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678389474, 3), "signature" : { "hash" : new BinData(0, "iuI37l8qrav7cjZoor7ml655MRM="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678389474, 3) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref b78f5a9a-5a3d-4d4f-8666-deb818f37cfe
+Completed in 200ms
+
+3/9/2023 7:22:54 PM
+Inserting with ref 63c53d5f-a2bb-43e7-8b50-274a856b86dd
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40779 32 20 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(20), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678389474, 3), "signature" : { "hash" : new BinData(0, "iuI37l8qrav7cjZoor7ml655MRM="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a320ef30317c1f635eb93"), "CreatedOn" : ISODate("2023-03-09T19:22:54.864Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("63c53d5f-a2bb-43e7-8b50-274a856b86dd"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection failed MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+       ---> System.IO.IOException: Unable to read data from the transport connection: Connection timed out.
+       ---> System.Net.Sockets.SocketException (110): Connection timed out
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadAsync(Stream stream, Byte[] buffer, Int32 offset, Int32 count, TimeSpan timeout, CancellationToken cancellationToken)
+         at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytesAsync(Stream stream, Byte[] buffer, Int32 offset, Int32 count, TimeSpan timeout, CancellationToken cancellationToken)
+         at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBufferAsync(CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+dbug: MongoDB.Command[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40779 32 20 Command failed insert 947358.0262 MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+       ---> System.IO.IOException: Unable to read data from the transport connection: Connection timed out.
+       ---> System.Net.Sockets.SocketException (110): Connection timed out
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationTo... 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removing
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closing Unknown
+dbug: MongoDB.Connection[0]
+      1 4 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closed Unknown
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40786 36 20 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(20), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("5fbf6536-6541-4a6b-99be-b3c3a95d4f44") }, "$clusterTime" : { "clusterTime" : Timestamp(1678389474, 3), "signature" : { "hash" : new BinData(0, "iuI37l8qrav7cjZoor7ml655MRM="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640a320ef30317c1f635eb93"), "CreatedOn" : ISODate("2023-03-09T19:22:54.864Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("63c53d5f-a2bb-43e7-8b50-274a856b86dd"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d5cb02845b1276d145
+dbug: MongoDB.Command[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 40786 36 20 Command succeeded insert 22.9329 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678390722, 1), "signature" : { "hash" : new BinData(0, "wNMCzfrl+IsnNCpTKlt/IGeqjZc="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678390722, 1) } 640855d5cb02845b1276d145
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 5 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 63c53d5f-a2bb-43e7-8b50-274a856b86dd
+Completed in 947582ms
+!!! ALERT TAKING TO LONG !!!
+

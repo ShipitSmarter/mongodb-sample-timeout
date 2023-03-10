@@ -1,0 +1,122 @@
+07:19:32 jeff@sis-laptop-30 publish ±|main ✗|→ ./sample azure
+dbug: MongoDB.SDAM[0]
+      1 Cluster opening
+
+dbug: MongoDB.SDAM[0]
+      1 Cluster opened
+3/10/2023 6:19:34 AM
+Inserting with ref 6629fc38-3f04-4354-8449-adc2a408bd51
+dbug: MongoDB.SDAM[0]
+      1 Description changed
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Server opening
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool opening 600000 0 100 2 120000 500
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool created 600000 0 100 2 120000 500
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection pool ready
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Description changed { ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/p9cd6-3m-acceptance-lb.izjha.mongodb.net:27017" }", EndPoint: "Unspecified/p9cd6-3m-acceptance-lb.izjha.mongodb.net:27017", ReasonChanged: "Initialized", State: "Connected", ServerVersion: , TopologyVersion: , Type: "LoadBalanced", WireVersionRange: "", LastHeartbeatTimestamp: null, LastUpdateTimestamp: "2023-03-10T06:19:34.5443044Z" }
+dbug: MongoDB.SDAM[0]
+      1 Description changed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.SDAM[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Server opened
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47332 4 1 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(1), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("182feb70-ed9c-4fbc-815e-a5c2d13b8dc4") }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640acbf68c6ac6a109cc3390"), "CreatedOn" : ISODate("2023-03-10T06:19:34.503Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("6629fc38-3f04-4354-8449-adc2a408bd51"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47332 4 1 Command succeeded insert 35.6617 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678429174, 1), "signature" : { "hash" : new BinData(0, "SO027WmiKHf4YOvjwQZ0xkkPUsA="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678429174, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 6629fc38-3f04-4354-8449-adc2a408bd51
+Completed in 442ms
+
+3/10/2023 6:24:34 AM
+Inserting with ref 7b1bb0bd-834f-4897-bd91-3b6587b3d53a
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47332 5 2 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(2), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("182feb70-ed9c-4fbc-815e-a5c2d13b8dc4") }, "$clusterTime" : { "clusterTime" : Timestamp(1678429174, 1), "signature" : { "hash" : new BinData(0, "SO027WmiKHf4YOvjwQZ0xkkPUsA="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640acd228c6ac6a109cc3391"), "CreatedOn" : ISODate("2023-03-10T06:24:34.945Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("7b1bb0bd-834f-4897-bd91-3b6587b3d53a"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection failed MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+       ---> System.IO.IOException: Unable to read data from the transport connection: Connection timed out.
+       ---> System.Net.Sockets.SocketException (110): Connection timed out
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+      --- End of stack trace from previous location ---
+         at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadAsync(Stream stream, Byte[] buffer, Int32 offset, Int32 count, TimeSpan timeout, CancellationToken cancellationToken)
+         at MongoDB.Driver.Core.Misc.StreamExtensionMethods.ReadBytesAsync(Stream stream, Byte[] buffer, Int32 offset, Int32 count, TimeSpan timeout, CancellationToken cancellationToken)
+         at MongoDB.Driver.Core.Connections.BinaryConnection.ReceiveBufferAsync(CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+dbug: MongoDB.Command[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47332 5 2 Command failed insert 951842.6837 MongoDB.Driver.MongoConnectionException: An exception occurred while receiving a message from the server.
+       ---> System.IO.IOException: Unable to read data from the transport connection: Connection timed out.
+       ---> System.Net.Sockets.SocketException (110): Connection timed out
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationTo... 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removing
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closing Unknown
+dbug: MongoDB.Connection[0]
+      1 1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection closed Unknown
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection removed
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checkout started
+dbug: MongoDB.Connection[0]
+      1 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection adding
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection created
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection opening
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection ready
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection added
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked out
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47339 9 2 Command started insert ftp-uploader { "insert" : "uploadstest123", "ordered" : true, "txnNumber" : NumberLong(2), "$db" : "ftp-uploader", "lsid" : { "id" : CSUUID("182feb70-ed9c-4fbc-815e-a5c2d13b8dc4") }, "$clusterTime" : { "clusterTime" : Timestamp(1678429174, 1), "signature" : { "hash" : new BinData(0, "SO027WmiKHf4YOvjwQZ0xkkPUsA="), "keyId" : NumberLong("7199281124231610374") } }, "apiVersion" : "1", "documents" : [{ "_id" : ObjectId("640acd228c6ac6a109cc3391"), "CreatedOn" : ISODate("2023-03-10T06:24:34.945Z"), "ModifiedOn" : null, "SchemaVersion" : 1, "Data" : { "ConnectionId" : "conn-1234", "BlobReference" : CSUUID("7b1bb0bd-834f-4897-bd91-3b6587b3d53a"), "Filename" : "testing123.txt", "Status" : "New", "ErrorDescription" : null } }] } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Command[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 47339 9 2 Command succeeded insert 19.8242 { "n" : 1, "ok" : 1.0, "$clusterTime" : { "clusterTime" : Timestamp(1678430427, 1), "signature" : { "hash" : new BinData(0, "0+Ul/Rs1DHRpmaJxs6+b265jjJs="), "keyId" : NumberLong("7199281124231610374") } }, "operationTime" : Timestamp(1678430427, 1) } 640855d4fa9ab2f5e572b041
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checking in
+dbug: MongoDB.Connection[0]
+      1 2 p9cd6-3m-acceptance-lb.izjha.mongodb.net 27017 Connection checked in
+Inserted with ref 7b1bb0bd-834f-4897-bd91-3b6587b3d53a
+Completed in 952077ms
+!!! ALERT TAKING TO LONG !!!
+
