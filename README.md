@@ -1,4 +1,10 @@
-# MongoDB timeouts on insert
+# Update
+> The problem described below has been answered on the [community forum of mongodb](https://www.mongodb.com/community/forums/t/timeout-on-insert-mongo-atlas-with-azure-serverless-backend/216941).  
+> As stated there `Azure Serverless` requires setting the TCP timeout to 120 seconds for the machine running the code.   
+> 
+> After setting the TCP timeout to 120seconds the timeouts DID NOT occur anymore!
+
+## MongoDB timeouts on insert 
 This repo holds the example application to demonstrate the timeouts we are experiencing when using MongoDB Atlas with Azure Serverless.
 
 
